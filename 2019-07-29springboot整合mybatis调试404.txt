@@ -1,0 +1,21 @@
+启动项目无误，但是访问对应url回显404 找不到资源
+重新做pom时缺少了启动依赖
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+然后是报This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+启动类是copy过来的 启动中默认启动的是项目2中的启动类，由于是copy过来的所以名字一样没区分开
+我rename了启动类的名字确定是这个信写的启动类启动后就可以正常运行了		
