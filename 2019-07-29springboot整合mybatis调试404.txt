@@ -18,4 +18,6 @@
 然后是报This application has no explicit mapping for /error, so you are seeing this as a fallback.
 
 启动类是copy过来的 启动中默认启动的是项目2中的启动类，由于是copy过来的所以名字一样没区分开
-我rename了启动类的名字确定是这个信写的启动类启动后就可以正常运行了		
+我rename了启动类的名字确定是这个信写的启动类启动后就可以正常运行了	
+
+控制台出现乱码报错 数据库连接配置问题 加上&serverTimezone=UTC	

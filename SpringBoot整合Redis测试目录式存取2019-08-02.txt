@@ -1,0 +1,5 @@
+/****************************************************/
+	08-01日再整合springboot和Redis时遇到一个错误，导致在根据name读取redis数据时
+返回为null，查看console控制台发现是报异常：
+cannot deserialize from Object value (no delegate- or property-based Creator)
+	最终找到的解决方法是给实体类加上无参构造方法就行了
